@@ -30,7 +30,7 @@ app.use(
 
 mongoose
   .connect(`${process.env.MONGODB_URL}`)
-  .then((e) => console.log(`Successfully Connected to ${e.connection.host}}`))
+  .then((e) => console.log(`Successfully Connected to ${e.connection.host}`))
   .catch((err) => console.log(err));
 
 app.use("/user", userRoutes);
